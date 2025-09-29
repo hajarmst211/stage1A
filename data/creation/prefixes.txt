@@ -1,0 +1,29 @@
+# A dictionary mapping specific Moroccan cities to their known CINE prefixes.
+# For major cities, a list of prefixes is provided for better variety.
+
+CINE_PREFIX_MAP = {
+    # Major Economic Hubs
+    'Rabat': ['A'],
+    'Casablanca': ['B', 'BE', 'BH', 'BJ', 'BK'],
+    'Tanger': ['E', 'I'],
+    'Fès': ['D', 'G'],
+    'Meknès': ['F'],  # Meknes and the surrounding region often use F
+    
+    # Other Large Cities
+    'Agadir': ['J'],
+    'Oujda': ['L'],
+    'Tétouan': ['M'], # Also uses M along with Mohammedia and other northern areas
+    'Béni Mellal': ['V'],
+    'El Jadida': ['P'], # Safi and El Jadida region
+    'Nador': ['N'],
+    
+    # Southern and Other Cities
+    'Laâyoune': ['X'],
+    'Ouarzazate': ['Z'],
+    'Berkane': ['L'], # Part of the Oriental region, often shares prefixes with Oujda
+    'Benslimane': ['W'],
+    'Fkih Ben Salah': ['V'], # Part of the Béni Mellal-Khénifra region
+
+    # A fallback for any city not explicitly listed
+    'default': ['XX'] 
+}
